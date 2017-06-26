@@ -1,0 +1,99 @@
+@import '../variables.styl'
+
+.top
+	background url('../img/top.jpg') center no-repeat
+	background-size cover
+	min-height 910px
+	+media(1024px)
+		min-height 670px
+	+media(768px)
+		background: #fff
+	&__about
+		position relative
+		text-align right
+		bottom -20%
+	>
+		img
+			width 100%
+			max-width 1920px
+			position absolute
+			left 0
+			right 0
+			margin 0 auto
+	.btn__red
+		position: absolute
+		bottom: -20%
+		left: 0
+		right: 0
+		margin: 0 auto
+
+.rates
+	width 100%
+	display flex
+	justify-content space-between
+	+media(768px)
+		flex-direction column
+		justify-content center
+		align-items center
+	&--item
+		padding 30px
+		padding-bottom 1px
+		margin-top 17%
+		max-width 313px
+		border-radius 15px
+		border-bottom-right-radius 0
+		background: rgba(0,0,0, .15)
+		position relative
+		+media(768px)
+			margin-bottom 2em
+			border-radius 15px !important
+			&::after
+				display none
+		&::after
+			content: ''
+			position: absolute
+			width: 0
+			height: 0
+			border-top: 25px solid #000
+			opacity .15
+			border-left: 20px solid transparent
+			right 0
+			bottom -25px
+		&:nth-last-child(1)
+			background: red
+			color #fff
+			border-bottom-right-radius 15px
+			border-bottom-left-radius 0
+			&::after
+				content: ''
+				position: absolute
+				width: 0
+				height: 0
+				opacity .05
+				border-left 0
+				border-top: 25px solid red
+				border-right: 20px solid transparent
+				left 0
+				bottom -25px
+				opacity 1
+			.rates--item--header
+				color #fff
+			.rates--item--num
+				span
+					color #fff
+		&--num		
+			margin 26px 0
+			span
+				color: #a0142d
+				font-family: "Vida21Pro"
+				font-size: 39px
+				font-weight: 400
+		&--header
+			color: #a0142d
+			font-size: 34px
+			font-weight: 400
+			margin-bottom 43px
+		&--about
+			font-family: 'vida22pro'
+			line-height 22px
+			font-size 18px 

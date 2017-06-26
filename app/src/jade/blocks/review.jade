@@ -1,0 +1,11 @@
+section#section-4.review 
+	.content
+		h2 Отзывы
+		.owl-carousel.slider
+			- for(var i = 0; i < 4; i++)
+				.review--item
+					article
+						img(src="img/review-photo.jpg", alt="photo").review--item--photo
+						p.text__center Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse officia.
+						.review--item--author Асмира
+	.btn.btn__red.btn__red__white.btn__center Бесплатная консультация

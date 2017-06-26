@@ -1,0 +1,28 @@
+.review {
+  padding: 50px 0;
+  background: url("../img/review.jpg") center no-repeat;
+  background-size: cover;
+}
+.review--item article {
+  width: 90%;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 0px 10px 0 rgba(0,0,0,0.3);
+          box-shadow: 0 0px 10px 0 rgba(0,0,0,0.3);
+  border-radius: 5px;
+  background: rgba(255,255,255,0.8);
+  padding: 30px;
+}
+.review--item--photo {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
+.review--item--author {
+  margin-top: 2em;
+  font-weight: 600;
+}
+.slider {
+  margin-bottom: 5em;
+}

@@ -1,0 +1,63 @@
+@import '../variables.styl'
+
+footer
+	background url('../img/footer.jpg') top left no-repeat
+	background-size cover
+	padding: 50px 0 65px
+	.content
+		display flex
+		justify-content space-between
+		align-items center
+.footer
+	&__phone
+		color: #891b30
+		font-family: "Vida22Pro"
+		font-size: 36px
+		font-weight: 400
+		line-height 1
+		display block
+		span
+			font-family: "Vida21Pro"
+			font-size: 14px
+			font-weight: 600
+			line-height 1
+			display inherit
+	&__time
+		font-size: 18px
+		font-family: "Vida21Pro"
+		span
+			font-size: 36px 
+	&__social
+		display flex
+		justify-content space-between
+		align-items center
+		a
+			background lightgray*0.8
+			padding 8px
+			border-radius 50%
+			margin 0 5px
+			flex-shrink 0
+			flex-grow 0
+			width 47px
+			height 47px
+			display flex
+			justify-content center
+			align-items center
+		i
+			color #fff
+			font-size 25px 
+	&__buttons
+		width 100%
+		display flex
+		justify-content space-between
+		align-items center 
+	&__links
+		display flex
+		justify-content space-between
+		align-items center
+		a
+			color: #424242
+			font-family: "Vida22Pro"
+			font-size: 16px
+			font-weight: 400
+			text-decoration: underline
