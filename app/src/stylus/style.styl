@@ -121,6 +121,11 @@ section
 		color: #fff
 		line-height: 45px
 		border 2px solid red
+		transition animation
+		&:hover
+			border 2px solid red
+			color red
+			background #fff
 		&__invert
 			border 2px solid #fff
 			color #fff
@@ -133,6 +138,12 @@ section
 .small
 	width: calc(100% / 3 - 2.5em)
 	margin-right 2.5em
+	+media(960px)
+		width 100%
+		margin 0 auto
 .large
 	width: calc(100% / 3 * 2 - 2.5em)
 	margin-left 2.5em
+	+media(960px)
+		width 90%
+		margin 0 auto 2em

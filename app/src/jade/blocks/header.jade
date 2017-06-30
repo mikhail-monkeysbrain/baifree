@@ -1,4 +1,6 @@
-header
+header#header
+	.burger-menu
+		.burger
 	.content
 		nav
 			a(href="#").logo
@@ -6,6 +8,9 @@ header
 				.logo__text
 					| Легко. Для своих
 			ul.menu
+				li.menu--item.hide__xl
+					.logo__text__xs
+						| Легко. Для своих
 				li.menu--item
 					a(href="#section-2") Индивидуальные займы
 				li.menu--item
@@ -15,7 +20,14 @@ header
 				li.menu--item
 					a(href="#section-5") Офисы
 				li.menu--item
-					a.menu--item__lang(href="#") Русский
+					a.menu--item__lang(href="#top") Русский
+				li.menu--item.hide__xl
+					.contacts
+						a(href="tel:88005505757").phone 
+							| 8 (800) 550-57-57
+							br
+							span.phone__for-free
+								|	Бесплатный звонок по всей России
 			.contacts
 				a(href="tel:88005505757").phone 
 					| 8 (800) 550-57-57

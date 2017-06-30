@@ -7,7 +7,13 @@
 	+media(1024px)
 		min-height 670px
 	+media(768px)
-		background: #fff
+		background url('../img/top__mobile.jpg') center repeat
+		background-size cover
+	+media(960px)
+		padding: 3.5em 0 3em
+		box-sizing: content-box
+	+media(480px)
+		padding-top 5em
 	&__about
 		position relative
 		text-align right
@@ -42,7 +48,7 @@
 		max-width 313px
 		border-radius 15px
 		border-bottom-right-radius 0
-		background: rgba(0,0,0, .15)
+		background: rgba(255,255,255, .65)
 		position relative
 		+media(768px)
 			margin-bottom 2em
@@ -54,8 +60,8 @@
 			position: absolute
 			width: 0
 			height: 0
-			border-top: 25px solid #000
-			opacity .15
+			border-top: 25px solid #fff
+			opacity .65
 			border-left: 20px solid transparent
 			right 0
 			bottom -25px

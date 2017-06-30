@@ -51,28 +51,42 @@
 @media screen and (max-width: 480px) {
   .step {
     width: 90%;
+    margin-bottom: 2em;
   }
 }
-.step:nth-last-child(1)::after {
-  display: none;
-}
-.step::after {
-  content: '';
+.step__after,
+.step__before {
   display: block;
   position: absolute;
   right: -25%;
   top: 10%;
-  width: 26px;
-  height: 27px;
-  background: url("../img/arrow.png");
+  width: 19px;
+  height: 26px;
+  background: url("../img/arrow.svg");
+  background-size: cover;
+}
+.step__before {
+  right: -webkit-calc(-25% - 10px);
+  right: calc(-25% - 10px);
 }
 @media screen and (max-width: 1100px) {
-  .step::after {
+  .step__before {
     right: -15%;
   }
 }
 @media screen and (max-width: 960px) {
-  .step::after {
+  .step__before {
+    display: none;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .step__after {
+    right: -webkit-calc(-15% - 10px);
+    right: calc(-15% - 10px);
+  }
+}
+@media screen and (max-width: 960px) {
+  .step__after {
     display: none;
   }
 }

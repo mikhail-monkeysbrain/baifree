@@ -2,6 +2,12 @@ footer {
   background: url("../img/footer.jpg") top left no-repeat;
   background-size: cover;
   padding: 50px 0 65px;
+  position: relative;
+}
+@media screen and (max-width: 960px) {
+  footer {
+    padding-bottom: 2em;
+  }
 }
 footer .content {
   display: -webkit-box;
@@ -17,13 +23,33 @@ footer .content {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 960px) {
+  footer .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 960px) {
+  .footer .logo {
+    display: none;
+  }
+}
 .footer__phone {
+  margin-top: 1em;
   color: #891b30;
   font-family: "Vida22Pro";
   font-size: 36px;
   font-weight: 400;
   line-height: 1;
   display: block;
+}
+@media screen and (max-width: 960px) {
+  .footer__phone {
+    display: none;
+  }
 }
 .footer__phone span {
   font-family: "Vida21Pro";
@@ -35,6 +61,11 @@ footer .content {
 .footer__time {
   font-size: 18px;
   font-family: "Vida21Pro";
+}
+@media screen and (max-width: 960px) {
+  .footer__time {
+    display: none;
+  }
 }
 .footer__time span {
   font-size: 36px;
@@ -80,6 +111,12 @@ footer .content {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 480px) {
+  .footer__social a {
+    margin: 0 2px;
+    padding: 0;
+  }
+}
 .footer__social i {
   color: #fff;
   font-size: 25px;
@@ -99,6 +136,18 @@ footer .content {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 480px) {
+  .footer__buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__buttons .btn {
+    margin: 0.5em 0;
+  }
+}
 .footer__links {
   display: -webkit-box;
   display: -webkit-flex;
@@ -112,6 +161,18 @@ footer .content {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .footer__links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__links a {
+    margin: 1em 0;
+  }
 }
 .footer__links a {
   color: #424242;

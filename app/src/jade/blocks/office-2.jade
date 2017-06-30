@@ -1,0 +1,24 @@
+section#section-5.offices
+	.content
+		h2.text__lightgray Наши офисы
+		section
+			- for(var n = 0; n < 11; n++)
+				article.office
+					img(src="img/office.jpg", alt="office")
+					.office--about
+						.office--about__header Байбол во Владивостоке
+						p.text__center  ул. Луговая, д. 21 А
+			article.offer
+				.offer--text.text__left
+					.offer--text__consult
+						span.text__red	Бесплатная	
+						| консультация
+						br
+						|	по телефону
+					br
+					br
+					a(href="tel:88005505757").offer--text__phone 8 800 550-57-57
+						br
+						span Бесплатный звонок по всей России
+				.offer--img
+					img(src="img/free-cosult.png")

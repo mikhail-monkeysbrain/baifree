@@ -10,7 +10,20 @@
 }
 @media screen and (max-width: 768px) {
   .top {
-    background: #fff;
+    background: url("../img/top__mobile.jpg") center repeat;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 960px) {
+  .top {
+    padding: 3.5em 0 3em;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+  }
+}
+@media screen and (max-width: 480px) {
+  .top {
+    padding-top: 5em;
   }
 }
 .top__about {
@@ -68,7 +81,7 @@
   max-width: 313px;
   border-radius: 15px;
   border-bottom-right-radius: 0;
-  background: rgba(0,0,0,0.15);
+  background: rgba(255,255,255,0.65);
   position: relative;
 }
 @media screen and (max-width: 768px) {
@@ -85,8 +98,8 @@
   position: absolute;
   width: 0;
   height: 0;
-  border-top: 25px solid #000;
-  opacity: 0.15;
+  border-top: 25px solid #fff;
+  opacity: 0.65;
   border-left: 20px solid transparent;
   right: 0;
   bottom: -25px;

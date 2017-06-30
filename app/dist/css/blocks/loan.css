@@ -47,11 +47,23 @@
     width: 90%;
   }
 }
+@media screen and (max-width: 960px) {
+  .package--about {
+    text-align: center;
+    width: 95%;
+    margin: 0 auto;
+  }
+}
 .package--about__header {
   font-family: "Vida22Pro";
   font-size: 32px;
   font-weight: 400;
   margin-bottom: 60px;
+}
+@media screen and (max-width: 960px) {
+  .package--about__header {
+    text-align: center;
+  }
 }
 .package--info {
   display: -webkit-box;

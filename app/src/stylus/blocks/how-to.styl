@@ -21,20 +21,26 @@
 		width 45%
 	+media(480px)
 		width 90%
-	&:nth-last-child(1)
-		&::after
-			display none
-	&::after
-		content ''
+		margin-bottom 2em
+	&__after,
+	&__before
 		display block
 		position absolute
 		right -25%
 		top 10%
-		width: 26px
-		height: 27px
-		background url('../img/arrow.png')
+		width: 19px
+		height: 26px
+		background url('../img/arrow.svg')
+		background-size cover
+	&__before
+		right calc(-25% - 10px)
 		+media(1100px)
 			right -15%
+		+media(960px)
+			display none
+	&__after
+		+media(1100px)
+			right calc(-15% - 10px)
 		+media(960px)
 			display none
 	&__number

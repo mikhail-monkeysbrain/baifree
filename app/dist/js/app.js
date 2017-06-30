@@ -41,5 +41,30 @@ $(document).ready(function() {
     var fixed_offset = 100;
     $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
     e.preventDefault();
+    $('.menu').toggleClass('open');
+    $(".burger-menu").removeClass("menu-on");
+  });
+});
+
+(function(){
+  $(".step__after")
+    .animate({
+        opacity: 0.1}, 700)
+    .animate({
+        opacity: 1}, 700, arguments.callee)
+}());
+
+(function(){
+  $(".step__before")
+    .animate({
+        opacity: 1}, 700)
+    .animate({
+        opacity: .1}, 700, arguments.callee)
+}());
+
+$(function(){
+  $(".burger-menu").click(function () {
+    $(this).toggleClass("menu-on");
+    $('.menu').toggleClass('open');
   });
 });

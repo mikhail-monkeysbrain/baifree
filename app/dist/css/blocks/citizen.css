@@ -1,3 +1,8 @@
+.citizen {
+  background: url("../img/citizen.jpg") no-repeat center;
+  background-size: cover;
+  min-height: 420px;
+}
 @media screen and (max-width: 1600px) {
   .citizen__header {
     background: rgba(255,255,255,0.5);
